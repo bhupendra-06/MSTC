@@ -1,0 +1,106 @@
+
+.hamburger2 label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  #hamburger2-input {
+    display: none;
+  }
+  .hamburger2 svg {
+    width: 50px;
+  }
+  .hamburger2 .line1,
+  .hamburger2 .line2,
+  .hamburger2 .line3 {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .hamburger2 input:checked ~ svg .line1 {
+    animation: hamburger2-down 0.6s ease-out forwards;
+  }
+  .hamburger2 input:checked ~ svg .line2 {
+    animation: hamburger2-hide 0.6s ease-out forwards;
+  }
+  .hamburger2 input:checked ~ svg .line3 {
+    animation: hamburger2-up 0.6s ease-out forwards;
+  }
+  .hamburger2 input:not(:checked) ~ svg .line1 {
+    animation: hamburger2-up-reverse 0.6s ease-out forwards;
+  }
+  .hamburger2 input:not(:checked) ~ svg .line2 {
+    animation: hamburger2-show 0.6s ease-out forwards;
+  }
+  .hamburger2 input:not(:checked) ~ svg .line3 {
+    animation: hamburger2-down-reverse 0.6s ease-out forwards;
+  }
+  @keyframes hamburger2-up {
+    0% {
+      transform: translateY(0px);
+    }
+    30% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(-10px) rotate(45deg) scale(0.9);
+    }
+  }
+  @keyframes hamburger2-up-reverse {
+    0% {
+      transform: translateY(-10px) rotate(45deg) scale(0.9);
+    }
+    70% {
+      transform: translateY(-10px) rotate(0deg) scale(1);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes hamburger2-down {
+    0% {
+      transform: translateY(0px);
+    }
+    30% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(10px) rotate(-45deg) scale(0.9);
+    }
+  }
+  @keyframes hamburger2-down-reverse {
+    0% {
+      transform: translateY(10px) rotate(-45deg) scale(0.9);
+    }
+    70% {
+      transform: translateY(10px) rotate(0deg) scale(1);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes hamburger2-hide {
+    29% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes hamburger2-show {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 0;
+    }
+    71% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

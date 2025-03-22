@@ -28,30 +28,30 @@ const Carousel = () => {
   };
 
   return (
-    <div className="sm:px-2 lg:px-20 sm:pt-5 mx-auto lg:w-full h-[50vh] lg:h-[99vh] overflow-hidden text-white border-none">
+    <div className="sm:px-2 bg-red-300 lg:px-20 sm:pt-5 mx-auto lg:w-full h-[30vh] sm:h-[50vh] overflow-hidden text-white border-none">
       <Slider {...settings}>
         {/* Slide 1 */}
-        <div className="w-full h-[200%] object-cover">
+        <div className="w-full h-full object-cover">
           <img
-            className="w-full h-full object-cover"
+            className="w-full h-full"
             src="https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="Poster 1"
           />
         </div>
 
         {/* Slide 2 */}
-        <div className="w-full h-[200%] object-cover">
+        <div className="w-full h-full object-cover">
           <img
-            className="w-full h-full object-cover"
+            className="w-full h-full"
             src="https://content.jdmagicbox.com/comp/surat/dc/0261px261.x261.1238470097n7y2v9.dc/catalogue/creative-coaching-classes-adajan-road-surat-tutorials-oi7x877f5w.jpg"
             alt="Poster 2"
           />
         </div>
 
         {/* Slide 3 */}
-        <div className="w-full h-[200%] object-cover">
+        <div className="w-full h-full object-cover">
           <img
-            className="w-full h-full object-cover"
+            className="w-full h-full"
             src="https://youthincmag.com/wp-content/uploads/2023/01/Features-20.jpg"
             alt="Poster 3"
           />

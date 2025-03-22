@@ -17,12 +17,12 @@ const Course = ({
       className={`m-2 p-5 flex flex-wrap sm:flex-nowrap gap-4 items-center justify-between ${bgColor} rounded-xl duration-500 hover:shadow-md hover:shadow-gray-400 relative overflow-hidden`}
     >
       <div className="sm:w-3/5">
-        <p className={`text-xl sm:text-2xl font-semibold ${textColor}`}>{title}</p>
-        <h3 className="mt-2 text-gray-600 text-3xl font-bold">{subtitle}</h3>
-        <p className="mt-2 text-gray-600">{description}</p>
+        <p className={`text-xl sm:text-xl font-semibold ${textColor}`}>{title}</p>
+        <h3 className="mt-2 text-gray-600 text-2xl font-bold">{subtitle}</h3>
+        <p className="mt-2 text-gray-600 text-base">{description}</p>
         <Link to="/courses">
           <button
-            className={`mt-4 px-5 py-2 text-lg text-white font-medium ${buttonColor} rounded-md cursor-pointer duration-300 hover:shadow-md hover:shadow-gray-400`}
+            className={`mt-4 px-4 py-2 text-base text-white font-medium ${buttonColor} rounded-md cursor-pointer duration-300 hover:shadow-md hover:shadow-gray-400`}
           >
             {buttonText}
           </button>
@@ -35,8 +35,8 @@ const Course = ({
           alt="course-img"
         />
       </div>
-      <span className={`hidden md:block w-10 h-10 border-[5px] ${borderColor} rounded-full absolute right-48 top-10`}></span>
-      <span className={`hidden md:block w-32 h-32 border-[12px] ${borderColor} rounded-full absolute -right-16 -bottom-16`}></span>
+      <span className={`hidden md:block w-10 h-10 border-[4px] ${borderColor} rounded-full absolute right-48 top-10`}></span>
+      <span className={`w-32 h-32 border-[12px] ${borderColor} rounded-full absolute -right-16 -bottom-16`}></span>
     </div>
   );
 };

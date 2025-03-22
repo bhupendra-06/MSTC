@@ -9,8 +9,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 left-0 w-full z-50 backdrop-blur-sm bg-white/20 border-b border-white/30 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
-        <Link to="/" className="m-4 text-2xl font-bold text-orange-600">
-          Brand
+        <Link to="/" className="m-4 text-2xl font-bold text-orange-600 font-dynapuff tracking-wide">
+          MSTC
         </Link>
 
         {/* Desktop Menu */}

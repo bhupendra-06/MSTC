@@ -8,25 +8,28 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 left-0 w-full z-50 backdrop-blur-sm bg-white/20 border-b border-white/30 shadow-md">
-      <div className="container mx-auto flex items-center justify-between">
-        <Link to="/" className="m-4 text-2xl font-bold text-orange-600 font-dynapuff tracking-wide">
-          MSTC
+      <div className="sm:px-20 flex items-center justify-between">
+        <Link
+          to="/"
+          className="m-4 text-2xl font-bold text-orange-600 font-dynapuff tracking-wide"
+        >
+          Logo
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 text-lg font-medium">
+        <ul className="hidden md:flex">
           <li>
             <a
               href="#"
-              className="hover:text-orange-600 transition duration-300"
+              className="p-4 text-gray-600 font-semibold hover:text-orange-600 transition duration-300"
             >
               Home
             </a>
           </li>
           <li>
             <a
-              href="#"
-              className="hover:text-orange-600 transition duration-300"
+              href="#about"
+              className="p-4 text-gray-600 font-semibold hover:text-orange-600 transition duration-300"
             >
               About
             </a>
@@ -34,7 +37,7 @@ const Navbar = () => {
           <li>
             <a
               href="#courses"
-              className="hover:text-orange-600 transition duration-300"
+              className="p-4 text-gray-600 font-semibold hover:text-orange-600 transition duration-300"
             >
               Courses
             </a>
@@ -42,7 +45,15 @@ const Navbar = () => {
           <li>
             <a
               href="#location"
-              className="hover:text-orange-600 transition duration-300"
+              className="p-4 text-gray-600 font-semibold hover:text-orange-600 transition duration-300"
+            >
+              Location
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="p-4 text-gray-600 font-semibold hover:text-orange-600 transition duration-300"
             >
               Contact
             </a>

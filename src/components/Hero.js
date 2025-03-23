@@ -28,7 +28,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="sm:px-2 bg-red-300 lg:px-20 sm:pt-5 mx-auto lg:w-full h-[30vh] sm:h-[50vh] overflow-hidden text-white border-none">
+    <div className="sm:px-2 lg:px-20 sm:pt-5 mx-auto lg:w-full h-[30vh] sm:h-[50vh] overflow-hidden text-white border-none">
       <Slider {...settings}>
         {/* Slide 1 */}
         <div className="w-full h-full object-cover">

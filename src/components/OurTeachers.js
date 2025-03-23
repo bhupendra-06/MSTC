@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 const OurTeachers = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 600,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     swipeToSlide: true,
     touchThreshold: 15,
@@ -55,12 +55,12 @@ const OurTeachers = () => {
   ];
 
   return (
-    <div className="max-w-[100vw] sm:max-w-5xl mx-4 sm:mx-auto py-5">
+    <div className="px-4 sm:px-52 py-5 pb-20 bg-blue-50 relative">
       <h2 className="text-3xl font-bold text-center mb-6">Meet Our <span className="text-orange-600">Teachers</span></h2>
       <Slider {...settings}>
         {teachers.map((teacher, index) => (
           <div key={index} className="p-10 sm:p-5 cursor-pointer duration-300 hover:scale-110">
-            <div className="py-5 bg-blue-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+            <div className="py-5 bg-blue-200/80 rounded-lg shadow-lg flex flex-col items-center text-center">
               <img
                 src={teacher.image}
                 alt={teacher.name}
@@ -75,6 +75,11 @@ const OurTeachers = () => {
           </div>
         ))}
       </Slider>
+      <div className="hidden sm:inline-block w-10 h-10 bg-blue-400/75 rounded-full absolute top-1/2 right-0"></div>
+      <div className="hidden sm:inline-block w-8 h-8 bg-blue-400/75 rounded-full absolute top-3/4 left-8"></div>
+      <div className="hidden sm:inline-block w-5 h-5 bg-blue-400/75 rounded-full absolute top-0 left-2/3"></div>
+      <div className="hidden sm:inline-block w-12 h-12 bg-blue-400/75 rounded-full absolute top-0 left-32"></div>
+      <div className="hidden sm:inline-block w-5 h-5 bg-blue-400/75 rounded-full absolute bottom-5 left-1/3"></div>
     </div>
   );
 };

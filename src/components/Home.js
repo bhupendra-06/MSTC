@@ -4,6 +4,7 @@ import AvailableCourses from './AvailableCourses';
 import MapLocation from './MapLocation';
 import OurTeachers from './OurTeachers';
 import PopularCourses from './PopularCourses';
+import AboutUs from './AboutUs';
 
 const Home = () => {
   return (

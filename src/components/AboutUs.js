@@ -4,8 +4,8 @@ import { GiCheckMark } from "react-icons/gi";
 
 function AboutUs() {
     return (
-        <div>
-            <div className='bg-yellow-200 flex flex-wrap justify-evenly my-10  px-18 '>
+        <div id='#about'>
+            <div className='flex flex-wrap justify-evenly my-10  px-18 pt-16'>
                 <div className='py-4 max-w-md'>
                     <p className='pb-4'>ABOUT US</p>
                     <h3 className='text-4xl font-bold pb-4 leading-normal'>Mana's best <span className='text-green-500 inline-block '> Tuition Center </span> for quality Education</h3>

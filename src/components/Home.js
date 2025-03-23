@@ -12,6 +12,7 @@ const Home = () => {
         <Hero />
         <PopularCourses/>
         <AvailableCourses />
+        <AboutUs/>
         <OurTeachers />
         <MapLocation />
     </div>

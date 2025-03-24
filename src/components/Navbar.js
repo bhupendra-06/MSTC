@@ -44,14 +44,6 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#location"
-              className="p-4 text-gray-600 font-semibold hover:text-orange-600 transition duration-300"
-            >
-              Location
-            </a>
-          </li>
-          <li>
-            <a
               href="#contact"
               className="p-4 text-gray-600 font-semibold hover:text-orange-600 transition duration-300"
             >
@@ -87,7 +79,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#about"
               className="block py-2 text-lg font-medium hover:bg-orange-100 hover:text-orange-600 transition duration-300 border-b"
               onClick={() => setIsOpen(false)}
             >
@@ -105,7 +97,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#location"
+              href="#contact"
               className="block py-2 text-lg font-medium hover:bg-orange-100 hover:text-orange-600 transition duration-300 border-b"
               onClick={() => setIsOpen(false)}
             >

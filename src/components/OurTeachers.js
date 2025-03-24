@@ -55,11 +55,11 @@ const OurTeachers = () => {
   ];
 
   return (
-    <div className="px-4 sm:px-52 py-5 pb-20 bg-blue-50 relative">
-      <h2 className="text-3xl font-bold text-center mb-6">Meet Our <span className="text-orange-600">Teachers</span></h2>
+    <div className="px-4 sm:px-52 py-5 pb-10 sm:pb-20 bg-blue-50 relative">
+      <h2 className="text-2xl font-bold text-center">Meet Our <span className="text-orange-600">Teachers</span></h2>
       <Slider {...settings}>
         {teachers.map((teacher, index) => (
-          <div key={index} className="p-10 sm:p-5 cursor-pointer duration-300 hover:scale-110">
+          <div key={index} className="p-8 sm:p-5 cursor-pointer duration-300 hover:scale-110">
             <div className="py-5 bg-blue-200/80 rounded-lg shadow-lg flex flex-col items-center text-center">
               <img
                 src={teacher.image}

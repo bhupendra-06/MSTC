@@ -14,6 +14,7 @@ const Home = () => {
         <PopularCourses/>
         <AboutUs />
         <AvailableCourses />
+        <AboutUs/>
         <OurTeachers />
         <Contact />
         <MapLocation />

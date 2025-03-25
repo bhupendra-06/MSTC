@@ -44,6 +44,14 @@ const Navbar = () => {
           </li>
           <li>
             <a
+              href="#events"
+              className="p-4 text-gray-600 font-semibold hover:text-orange-600 transition duration-300"
+            >
+              Events
+            </a>
+          </li>
+          <li>
+            <a
               href="#contact"
               className="p-4 text-gray-600 font-semibold hover:text-orange-600 transition duration-300"
             >

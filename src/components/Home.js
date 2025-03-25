@@ -6,6 +6,7 @@ import OurTeachers from './OurTeachers';
 import PopularCourses from './PopularCourses';
 import AboutUs from './AboutUs';
 import Contact from './Contact';
+import  Events  from './Events';
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
         <PopularCourses/>
         <AboutUs />
         <AvailableCourses />
-        <AboutUs/>
+        <Events/>        
         <OurTeachers />
         <Contact />
         <MapLocation />

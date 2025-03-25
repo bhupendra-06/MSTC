@@ -7,7 +7,7 @@ function AboutUs() {
     <div>
       <div
         id="about"
-        className="bg-yellow-200 flex flex-wrap justify-evenly pt-16 px-4 sm:px-18 "
+        className="flex flex-wrap justify-evenly pt-16 px-4 sm:px-18 "
       >
         <div className="py-4 max-w-md">
           <p className="pb-4">ABOUT US</p>
